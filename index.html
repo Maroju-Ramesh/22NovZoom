@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+<style>
+    html, body{
+        box-sizing: border-box;
+        margin: 0;padding: 0;
+    }
+    .header{
+        display: flex;
+        background-color: rgb(14, 13, 13);
+        height: 8vh;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: end;
+        gap: 8px;
+        align-items: center;
+        
+    }
+    main{
+        background-color: rgb(19, 18, 18);
+        height: 84vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y: scroll;
+       
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .card{
+        width: 270px;
+        height: 145px;
+        background-color: rgb(27, 27, 27);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .card:hover{
+        border: 1px solid white;
+    }
+    .name{
+        display: flex;
+        position: absolute;
+        left: 5px;
+        bottom: -20px;
+        gap: 3px;
+        
+    }
+    h1{
+        color: white;
+    }
+    h6{
+        color: white;
+    }
+    footer{
+        background-color: rgb(14, 13, 13);
+        height: 8vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+    
+    .red{
+        
+        filter: invert(18%) sepia(92%) saturate(7467%) hue-rotate(0deg) ;
+    }
+    .white{
+        filter: invert(1) ;
+    }
+    .align:hover{
+padding: 10px;
+border: 1px solid blue;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="header">
+        <img class="white" width="25px" src="./pause.svg" alt="">
+        <img class="white" width="25px" src="./stop.svg" alt="">
+        <img class="white" width="25px" src="./view.svg" alt="">
+
+    </div>
+    <main>
+<div class="card">
+<h1>Harish M</h1>
+<div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+
+</div>
+<div class="card">
+    <img width="120px" src="./pic4.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Ganesh</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Karthik </h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Abhilash k</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <img width="120px" src="./pic3.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div><div class="card">
+    <h1>RiyaRoy</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <img width="120px" src="./pic2.jpg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Leone wah</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Henry Calen</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>sravan kumar</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Manoj mannu</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>suraj s</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <img width="120px" src="./pic5.jpeg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Mallesh M</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Bandoju Bhanu</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <img width="120px" src="./pic1.jpeg" alt="">
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+<div class="card">
+    <h1>Suresh kumar</h1>
+    <div class="name"><img class="red" width="13px" src="./audiomuted.svg" alt=""><h6>Harish M</h6></div>
+</div>
+
+    </main>
+    <footer>
+<img class="white align" width="20px" src="./audio.svg" alt="">
+<img class="white align" width="25px" src="./videocam.svg" alt="">
+<img class="white align" width="25px" src="./usergrp.svg" alt="">
+<img class="white align" width="25px" src="./chat.svg" alt="">
+<img class="white align" width="25px" src="./share.svg" alt="">
+<img class="white align" width="25px" src="./apps.svg" alt="">
+<img class="white align" width="25px" src="./pause.svg" alt="">
+<img class="white align" width="25px" src="./stop.svg" alt="">
+<img class="white align" width="25px" src="./more.svg" alt="">
+<img class="red align" width="25px" src="./cross.svg" alt="">
+    </footer>
+</body>
+</html>
